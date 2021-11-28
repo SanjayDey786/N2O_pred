@@ -82,9 +82,30 @@ if st.button('Predict NO2 Flux'):
     else:
         replication = 5
 
-    months = {'January':1,'February':2,'March':3,'April':4,'May':5,'June':6,'July':7,'August':8,'September':9,'October':10,'November':11,'December':12}
-
-    mnth = months[month]
+    if month == 'January':
+        month = 1
+    elif month == 'February':
+        month = 2
+    elif month == 'March':
+        month = 3
+    elif month == 'April':
+        month = 4
+    elif month == 'May':
+        month = 5
+    elif month == 'June':
+        month = 6
+    elif month == 'July':
+        month = 7
+    elif month == 'August':
+        month = 8
+    elif month == 'September':
+        month = 9
+    elif month == 'October':
+        month = 10
+    elif month == 'November':
+        month = 11
+    else:
+        month = 12
 
     if vegetation == 'Corn':
         vegetation = 1
